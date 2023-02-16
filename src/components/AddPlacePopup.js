@@ -41,7 +41,7 @@ export function AddPlacePopup({
           type="text"
           placeholder="Title"
           name="name"
-          value={name || ""}
+          value={name}
           onChange={handleChangeName}
           className="form__input form__input_content_title"
           minLength="1"
@@ -54,7 +54,7 @@ export function AddPlacePopup({
           type="url"
           placeholder="Image link"
           name="link"
-          value={link || ""}
+          value={link}
           onChange={handleChangeLink}
           className="form__input form__input_content_link"
           required

@@ -105,7 +105,7 @@ function App() {
     api
       .deleteCard(card._id)
       .then(() => {
-        const newCards = cards.filter((c) => c._id !== card._id);
+        const newCards = cards.filter((carditem) => carditem._id !== card._id);
         setCards(newCards);
         closeAllPopups();
       })
@@ -132,8 +132,8 @@ function App() {
     setIsLoading(true);
     api
       .editUserAvatar(avatar)
-      .then((newAvatar) => {
-        setCurrentUser({ ...newAvatar });
+      .then((newUser) => {
+        setCurrentUser({ ...newUser });
         closeAllPopups();
       })
       .catch((err) => {

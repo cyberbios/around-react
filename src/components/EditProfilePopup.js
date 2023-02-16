@@ -8,8 +8,8 @@ export function EditProfilePopup({ isLoading, isOpen, onClose, onUpdateUser }) {
   const currentUser = useContext(CurrentUserContext);
 
   useEffect(() => {
-    setName(currentUser.name);
-    setDescription(currentUser.about);
+    setName(currentUser.name || "");
+    setDescription(currentUser.about || "");
   }, [currentUser, isOpen]);
 
   function handleSubmit(e) {
@@ -41,7 +41,7 @@ export function EditProfilePopup({ isLoading, isOpen, onClose, onUpdateUser }) {
           id="name-input"
           type="text"
           placeholder="Name"
-          value={name || ""}
+          value={name}
           name="name"
           onChange={handleChangeName}
           minLength="2"
@@ -54,7 +54,7 @@ export function EditProfilePopup({ isLoading, isOpen, onClose, onUpdateUser }) {
           id="job-input"
           type="text"
           placeholder="About me"
-          value={description || ""}
+          value={description}
           name="about"
           onChange={handleChangeDescription}
           minLength="2"
