@@ -25,7 +25,7 @@ Add new images and delete that you don't want. Change the names of images and li
 ![Proj5_PAGE](https://user-images.githubusercontent.com/15382289/195345965-87865e00-8063-46fe-b19a-bcb823d7a131.png)
 
 - [Link to the project in Figma](https://www.figma.com/file/SurN1jaeEQIhuZEDMhmWWf/Sprint-4-Around-The-U.S.-desktop-mobile?node-id=0%3A1)
-- [Link to the project in GitHub pages] (https://cyberbios.github.io/around-react/)
+- [Link to the project in GitHub pages] (https://cyberbios.github.io/around-react)
 - [Link to the tinypng compact images] (https://tinypng.com/)
 
 **Images**
